@@ -2,6 +2,7 @@ class Solution {
 public:
     int trap(vector<int>& height) {
         int n = height.size();
+        // previous greatest element array
         int prev[n];
         prev[0] = -1;
         int max = height[0];
